@@ -15,11 +15,10 @@ function przelicz(){
 
         value = ins[i].value;
         sum += parseInt(value);
-        numbers[i] = parseInt(value);
+        numbers.push(parseInt(value));
     }
-
-    let max = Math.max(numbers);
-    let min = Math.min(numbers);
+    let max = Math.max(...numbers);
+    let min = Math.min(...numbers);
     let avg = sum / numbers.length;
 
 
